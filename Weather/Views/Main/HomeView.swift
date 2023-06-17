@@ -9,46 +9,42 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        ZStack {
-            // Mark: Background Color
-            Color.background
-                .ignoresSafeArea()
-            
-            // Mark: Background Image
-            Image("Background")
-                .resizable()
-                .ignoresSafeArea()
-            
-            // Mark: House Image
-            Image("House")
-                .frame(maxHeight: .infinity, alignment: .top)
-                .padding(.top, 257)
-            
-            // Mark: Current Weather
-            VStack(spacing: -10) {
-                Text("Montreal")
-                    .font(.largeTitle)
+        NavigationView {
+            ZStack {
+                // Mark: Background Color
+                Color.background
+                    .ignoresSafeArea()
                 
-                VStack {
-//                    Text("19°C")
-//                        .font(.system(size: 96, weight: .thin))
-//                        .foregroundColor(.primary)
-//                    +
-//                    Text("\n")
-//                    +
-//                    Text("Mostly Clear")
-//                        .font(.title3.weight(.semibold))
-//                        .foregroundColor(.secondary)
+                // Mark: Background Image
+                Image("Background")
+                    .resizable()
+                    .ignoresSafeArea()
+                
+                // Mark: House Image
+                Image("House")
+                    .frame(maxHeight: .infinity, alignment: .top)
+                    .padding(.top, 257)
+                
+                // Mark: Current Weather
+                VStack(spacing: -10) {
+                    Text("Montreal")
+                        .font(.largeTitle)
                     
-                    Text(attributedString)
-                    
-                    Text("H:24°C L:18°C")
-                        .font(.title3.weight(.semibold))
-                    
-                    Spacer()
+                    VStack {
+                        Text(attributedString)
+                        
+                        Text("H:24°C L:18°C")
+                            .font(.title3.weight(.semibold))
+                        
+                        Spacer()
+                    }
                 }
+                .padding(.top, 51)
+                
+                // Mark: Tab bar
+                TabBar(action: {})
             }
-            .padding(.top, 51)
+            .navigationBarHidden(true)
         }
     }
     

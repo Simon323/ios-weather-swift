@@ -2,7 +2,7 @@
 //  ForecastCard.swift
 //  Weather
 //
-//  Created by Morty on 19/06/2023.
+//  Created by Miekusoft on 19/06/2023.
 //
 
 import SwiftUI

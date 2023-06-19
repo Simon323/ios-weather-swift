@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ForecastView: View {
+    var bottomSheetTranslationProrated: CGFloat = 1
     var body: some View {
         ScrollView{
             

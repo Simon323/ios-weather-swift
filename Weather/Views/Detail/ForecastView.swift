@@ -12,7 +12,8 @@ struct ForecastView: View {
         ScrollView{
             
         }
-        .background(Color.bottomSheetBackground)
+        .backgroundBlur(radius: 25, opaque: true)
+        .background(.ultraThinMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 44))
         .overlay{
             // Mark: Bottom Sheet Separator

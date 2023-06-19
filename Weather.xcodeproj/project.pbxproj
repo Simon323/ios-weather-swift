@@ -17,6 +17,7 @@
 		81DC4BDC2A40346300058E99 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC4BDB2A40346300058E99 /* Shapes.swift */; };
 		81DC4BE52A4053EA00058E99 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 81DC4BE42A4053EA00058E99 /* BottomSheet */; };
 		81DC4BE72A4054D500058E99 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC4BE62A4054D500058E99 /* ForecastView.swift */; };
+		81DC4BEA2A4059DE00058E99 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC4BE92A4059DE00058E99 /* Blur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8114CCC62A3E594D005B8BCC /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		81DC4BDB2A40346300058E99 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		81DC4BE62A4054D500058E99 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		81DC4BE92A4059DE00058E99 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				8114CCBF2A3E4A84005B8BCC /* Main */,
 				8114CCC02A3E4A8F005B8BCC /* Navigation */,
 				8114CCC12A3E4A98005B8BCC /* Detail */,
+				81DC4BE82A40594800058E99 /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +133,14 @@
 				81DC4BE62A4054D500058E99 /* ForecastView.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		81DC4BE82A40594800058E99 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				81DC4BE92A4059DE00058E99 /* Blur.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 			files = (
 				8114CCB12A3E444C005B8BCC /* ContentView.swift in Sources */,
 				8114CCC52A3E4EF6005B8BCC /* HomeView.swift in Sources */,
+				81DC4BEA2A4059DE00058E99 /* Blur.swift in Sources */,
 				8114CCC32A3E4B57005B8BCC /* Extensions.swift in Sources */,
 				8114CCAF2A3E444C005B8BCC /* WeatherApp.swift in Sources */,
 				81DC4BE72A4054D500058E99 /* ForecastView.swift in Sources */,

@@ -68,7 +68,7 @@ struct HomeView: View {
                     // Mark: Bottom Sheet
                     BottomSheetView(position: $bottomSheetPosition){
                         // Text(bottomSheetPosition.rawValue.formatted())
-                        Text(bottomSheetTranslationProrated.formatted())
+//                        Text(bottomSheetTranslationProrated.formatted())
                     } content: {
                         ForecastView(bottomSheetTranslationProrated: bottomSheetTranslationProrated)
                     }

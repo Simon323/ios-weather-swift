@@ -2,7 +2,7 @@
 //  WeatherWidget.swift
 //  Weather
 //
-//  Created by Morty on 20/06/2023.
+//  Created by Miekusoft on 20/06/2023.
 //
 
 import SwiftUI

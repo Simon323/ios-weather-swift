@@ -2,12 +2,22 @@
 //  WeatherView.swift
 //  Weather
 //
-//  Created by Morty on 20/06/2023.
+//  Created by Miekusoft on 20/06/2023.
 //
 
 import SwiftUI
 
 struct WeatherView: View {
+    @State private var searchText = ""
+    
+    var searchResult: [Forecast] {
+        if searchText.isEmpty {
+            return Forecast.cities
+        } else {
+            return Forecast.cities.filter { $0.location.contains(searchText) }
+        }
+    }
+    
     var body: some View {
         ZStack {
             // Mark: background
@@ -16,7 +26,7 @@ struct WeatherView: View {
             // Mark: Weather widgets
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 20) {
-                    ForEach(Forecast.cities) { forecast in
+                    ForEach(searchResult) { forecast in
                         WeatherWidget(forecast: forecast)
                     }
                 }
@@ -27,7 +37,7 @@ struct WeatherView: View {
             }
         }
         .overlay{
-            NavigationBar()
+            NavigationBar(searchText: $searchText)
         }
         .navigationBarHidden(true)
     }
@@ -35,7 +45,9 @@ struct WeatherView: View {
 
 struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherView()
-            .preferredColorScheme(.dark)
+        NavigationView {
+            WeatherView()
+                .preferredColorScheme(.dark)
+        }
     }
 }
